@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tN-vG-ZKW">
+                                <rect key="frame" x="20" y="547" width="335" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Di4-Ou-BfO"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="gPP-Gc-IOn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="tUj-wp-YAQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show another fun fact"/>
+                                <connections>
+                                    <action selector="ShowFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtC-TG-TFz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You are born with 300 bones; by the time you are an adult you will have 206." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixb-go-TNz">
+                                <rect key="frame" x="20" y="297" width="335" height="72"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ixb-go-TNz" secondAttribute="height" multiplier="75:16" id="rbg-9u-qZH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10s-Br-Bex">
+                                <rect key="frame" x="16" y="151" width="118" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="0Iy-YF-kg8"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="159-3D-UcV"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1zd-k2-ps1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="20" id="2wO-fi-5qO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="78" id="4no-7J-fGZ"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="56T-wb-s03"/>
+                            <constraint firstItem="10s-Br-Bex" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="131" id="5v7-J0-NfE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="6D2-NP-A0x"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Ekf-Ui-tUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="Fdm-g5-jXO"/>
+                            <constraint firstItem="ixb-go-TNz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ISo-PV-SER"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="20" id="Jup-gY-Ifw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="20" id="K2V-zJ-9Rg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="Mea-JN-ioR"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PUB-OA-SVG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="20" id="QS0-y7-Uab"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="top" secondItem="ixb-go-TNz" secondAttribute="bottom" constant="74.5" id="Vc6-ni-kFu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ixb-go-TNz" secondAttribute="trailing" constant="20" id="Z6h-lu-N6C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="Zu9-27-jbk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="20" id="ajM-bR-7DO"/>
+                            <constraint firstItem="ixb-go-TNz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="b0o-rT-SQq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="bzb-1n-FOd"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="daf-0k-izR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="193" id="gNx-2a-yI5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tN-vG-ZKW" secondAttribute="trailing" constant="20" id="ikG-MJ-UNx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8tN-vG-ZKW" secondAttribute="bottom" constant="80" id="qpW-xm-53S"/>
+                            <constraint firstItem="8tN-vG-ZKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tYi-Am-vCh"/>
+                            <constraint firstItem="10s-Br-Bex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uvZ-8f-j3x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="8tN-vG-ZKW" id="u0r-gO-ohP"/>
+                        <outlet property="funFactLabel" destination="ixb-go-TNz" id="Slf-oV-Dow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
